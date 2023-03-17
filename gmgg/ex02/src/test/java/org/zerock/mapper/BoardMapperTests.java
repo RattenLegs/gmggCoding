@@ -69,4 +69,5 @@ public class BoardMapperTests {
 		log.info("UPDATE COUNT: " + count);
 	}
 
+
 }
