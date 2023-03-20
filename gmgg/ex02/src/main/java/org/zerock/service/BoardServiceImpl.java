@@ -7,13 +7,14 @@ import org.springframework.stereotype.Service;
 import org.zerock.domain.BoardVO;
 import org.zerock.mapper.BoardMapper;
 
+import lombok.Setter;
 import lombok.extern.log4j.Log4j;
 
 @Log4j
 @Service
 public class BoardServiceImpl implements BoardService {
 
-	@Autowired
+	@Setter(onMethod_ = @Autowired)
 	private BoardMapper mapper;
 	
 	@Override
