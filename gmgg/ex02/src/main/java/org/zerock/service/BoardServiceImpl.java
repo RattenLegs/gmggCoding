@@ -10,8 +10,9 @@ import org.zerock.mapper.BoardMapper;
 import lombok.Setter;
 import lombok.extern.log4j.Log4j;
 
-@Log4j
+
 @Service
+@Log4j
 public class BoardServiceImpl implements BoardService {
 
 	@Setter(onMethod_ = @Autowired)
