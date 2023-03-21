@@ -17,7 +17,7 @@ import lombok.extern.log4j.Log4j;
 public class BoardServiceTests {
 
 	
-	@Setter(onMethod_ = @Autowired)
+	@Setter(onMethod_ = {@Autowired })
 	private BoardService service;
 	
 	@Test
@@ -25,6 +25,7 @@ public class BoardServiceTests {
 		log.info(service);
 		assertNotNull(service);
 	}
+	//여기까지는 된단말이지? 그럼 VO와 service 간의 관계 어딘가에 문제가 있다는건데
 
 	@Test
 	public void testRegister() {

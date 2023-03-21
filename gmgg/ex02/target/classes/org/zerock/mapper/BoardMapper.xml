@@ -43,3 +43,4 @@
 	where bno = #{bno}
 	</update>
 </mapper>
+

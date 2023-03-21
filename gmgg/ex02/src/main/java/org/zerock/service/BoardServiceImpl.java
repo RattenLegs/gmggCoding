@@ -2,20 +2,20 @@ package org.zerock.service;
 
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.zerock.domain.BoardVO;
 import org.zerock.mapper.BoardMapper;
 
-import lombok.Setter;
+import lombok.AllArgsConstructor;
 import lombok.extern.log4j.Log4j;
 
 
 @Service
 @Log4j
+@AllArgsConstructor
 public class BoardServiceImpl implements BoardService {
 
-	@Setter(onMethod_ = @Autowired)
+	//spring 4.3 이상에서 자동 처리
 	private BoardMapper mapper;
 	
 	@Override
@@ -23,7 +23,6 @@ public class BoardServiceImpl implements BoardService {
 		log.info("register..." + board);
 		
 		mapper.insertSelectKey(board);
-		
 	}
 
 	@Override
@@ -47,6 +46,7 @@ public class BoardServiceImpl implements BoardService {
 	@Override
 	public List<BoardVO> getList() {
 		log.info("getlist........");
+		
 		return mapper.getList();
 	}
 
