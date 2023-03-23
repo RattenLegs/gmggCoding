@@ -1,5 +1,9 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page session="false" %>
+<%@ page contentType="text/html; charset=euc-kr" %>
+<%@ page pageEncoding="utf-8" %>
+<%@ page import="java.util.Date" %>
+<% Date now = new Date(); %>
 <html>
 <head>
 	<title>Home</title>
