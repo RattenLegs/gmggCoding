@@ -14,5 +14,6 @@
 </h1>
 
 <P>  The time on the server is ${serverTime}. </P>
+<p>현재 시각: <%= now %></p>
 </body>
 </html>
