@@ -30,6 +30,10 @@
 	select * from tbl_board where bno = #{bno}
 	</select>
 	
+	<select>
+	
+	</select>
+	
 	<delete id="delete">
 	delete from tbl_board where bno = #{bno}
 	</delete>
